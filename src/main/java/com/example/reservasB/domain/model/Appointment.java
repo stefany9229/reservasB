@@ -1,4 +1,4 @@
-package com.example.reservasB.model;
+package com.example.reservasB.domain.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -17,14 +17,14 @@ public class Appointment {
 
     @Id
     @SequenceGenerator(
-            name = "appointment _id_sequence",
-            sequenceName = "appointment _id_sequence"
+            name = "appointment_id_sequence",
+            sequenceName = "appointment_id_sequence",
+            allocationSize = 1
     )
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
-            generator = "appointment _id_sequence"
+            generator = "appointment_id_sequence"
     )
-
     private Integer id;
 
     private LocalDateTime fecha;

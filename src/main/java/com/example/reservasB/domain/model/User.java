@@ -1,6 +1,6 @@
-package com.example.reservasB.model;
+package com.example.reservasB.domain.model;
 
-import com.example.reservasB.enums.ERole;
+import com.example.reservasB.domain.enums.ERole;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -26,7 +26,7 @@ public class User {
             strategy = GenerationType.SEQUENCE,
             generator = "user_id_sequence"
     )
-    private Long integer;
+    private Integer id;
 
     @Column(name = "nombre")
     private String nombre;

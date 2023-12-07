@@ -1,11 +1,11 @@
-package com.example.reservasB.enums;
+package com.example.reservasB.domain.enums;
 
 import lombok.Getter;
 
 @Getter
 public enum ERole {
 
-    USER("USER"),
+    CLIENT("CLIENT"),
     PROFESSIONAL("PROFESSIONAL");
 
 ERole(String name){
